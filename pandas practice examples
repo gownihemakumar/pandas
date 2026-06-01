@@ -1,0 +1,172 @@
+1.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+print(cg.head())
+
+
+2.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+print(cg.tail())
+
+3.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+print(cg.describe())
+
+
+4.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+print(cg[["names","age"]])
+
+
+5.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+print(cg.loc[1])
+print(cg.iloc[5,0])
+
+
+6.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+cg=cg.drop("age",axis=1)
+print(cg)
+
+
+7.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+print(cg[cg["age"]>18])
+
+
+8.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+cg["marks"]=[40,90,95,100,99,95,50]
+print(cg)
+
+
+9.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+cg=cg.rename(columns={"names":"list"})
+print(cg)
+
+
+10.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath",None],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+print(cg.isnull())
+
+
+11.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath",None],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+cg["names"]=cg["names"].fillna("raju")
+print(cg)
+
+
+12.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+print(cg["age"].sum())
+
+
+13.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi"],
+    "age":[19,12,20],
+}
+cg=pd.DataFrame(data)
+print(cg["age"].mean())
+
+
+14.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+print(cg["names"].max())
+
+
+15.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+print(cg["age"].min())
+
+
+16.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+print(cg.shape)
+
+
+17.
+import pandas as pd
+data={
+    "names":["hemu","rushi","mokshi","danvika","charan","sharath","raju"],
+    "age":[19,12,9,5,14,15,18],
+}
+cg=pd.DataFrame(data)
+print(cg.columns)
